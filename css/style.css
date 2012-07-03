@@ -126,8 +126,11 @@ form.notify {
 footer {
 	background: #333333;
 	height: 100px;
-	display: inline;
 	color: #999;
 }
+
+	li {
+		display: inline;
+	}
 
 
