@@ -77,12 +77,16 @@ header {
 	border-bottom: 1px solid #e2e2e2;
 }
 
-form.notify {
-	width: 450px;
-	height: 400px;
+#content-area {
+	width:450px;
 	border: 12px solid #000000;
 	margin: 20px auto 20px auto;
 	padding: 25px 25px 25px 25px;
+}
+
+form.notify {
+	height: 400px;
+	
 
 }
 	.field-name {
@@ -127,7 +131,9 @@ form.notify {
 		padding-right: 10px;
 	}
 
-	
+.confirmation-message {
+	display: none;
+}
 	
 /*************************** 04. FOOTER **********************************/
 

@@ -11,8 +11,18 @@
 		<link rel="stylesheet" href="css/reset.css">
 		<link rel="stylesheet" href="css/style.css">
 		
-		
-		
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+
+		<script>
+		$(function(){
+			$('.notify-button').click(function(){
+				$('form').hide();
+				$('#directions').hide();
+				$('.confirmation-message').show();
+			})
+		})
+		</script>	
+	
 	</head>
 
 	<body>
@@ -30,6 +40,8 @@
 				<p>Fill in the fields below to notify a member or GA employee about visitors, food deliveries, package deliveries or if you simply want to say hello.</p>	
 		</div> <!-- END OF #DIRECTIONS DIV -->
 
+		
+		<div id="content-area">
 		<form class="notify">
 			<h3>Who would you like to notify?</h3>
 
@@ -46,9 +58,11 @@
    				<img class="checkbox-icons" src='images/email_checkbox.png' alt="mobile phone" /><input type="checkbox" class="checkbox" name="communicationtype" value="email"  /> 
    				</div> <!-- END OF #CHECKBOX-OPTIONS -->
 
-   			<button type="submit" class="notify-button">Send Notification</button>  
+   			<button type="button" class="notify-button">Send Notification</button>  
 
 		</form>	<!-- END OF #FORM -->
+		<p class="confirmation-message">Your notification has been sent.</p>
+		</div><!-- END OF #CONTENT-AREA-->
 
 		</div><!-- END #CONTAINER DIV -->
 		
