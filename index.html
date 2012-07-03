@@ -33,10 +33,18 @@
 		<form class="notify">
 			<h3>Who would you like to notify?</h3>
 
-				<input type='text' class="field" placeholder="start typing his (or her) name..." />
+				<input type='text' class="field-name" placeholder="start typing his/her name..." />
 			
-			<h3>What would you like to tell him (or her)?</h3>
-   				<textarea class="field140" maxlength="140" placeholder="the message goes here, keep it short, 140 characters short."></textarea>
+			<h3>What would you like to tell him/her?</h3>
+   				
+   				<textarea class="field-message" maxlength="140" placeholder="your message goes here, keep it short, 140 characters short."></textarea>
+
+   			<h3>Notify via text, email or both?</h3>
+   				<div id="checkbox-options">
+   				<img class="checkbox-icons" src='images/mobile_checkbox.png' alt="mobile phone" /><input type="checkbox" class="checkbox" name="communicationtype" value="mobile"  />
+
+   				<img class="checkbox-icons" src='images/email_checkbox.png' alt="mobile phone" /><input type="checkbox" class="checkbox" name="communicationtype" value="email"  /> 
+   				</div> <!-- END OF #CHECKBOX-OPTIONS -->
 
    			<button type="submit" class="notify-button">Send Notification</button>  
 
